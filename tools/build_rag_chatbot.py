@@ -43,8 +43,9 @@ def build_qa_chain(vectorstore):
 
     # Use Groq LLM (e.g., LLaMA3-8B or Mistral)
     llm = ChatGroq(
+        groq_api_key=os.getenv("GROQ_API_KEY"),
         temperature=2,
-        model_name="mixtral-8x7b-32768",  # You can also try: llama3-70b-8192 or gemma-7b-it
+        model_name="llama3-70b-8192",  # You can also try: llama3-70b-8192 or gemma-7b-it
     )
 
     qa_chain = RetrievalQA.from_chain_type(
