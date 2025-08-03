@@ -1,5 +1,3 @@
-# crew/setup_crew.py
-
 from crewai import Crew
 from agents.reader_agent import reader_agent
 from agents.segmenter_agent import segmenter_agent
@@ -10,7 +8,7 @@ from agents.booklet_agent import booklet_agent
 from agents.chatbot_agent import chatbot_agent
 
 def initialize_crew():
-    crew = Crew(
+    return Crew(
         agents=[
             reader_agent,
             segmenter_agent,
@@ -18,9 +16,8 @@ def initialize_crew():
             citation_agent,
             visualizer_agent,
             booklet_agent,
-            chatbot_agent,
+            chatbot_agent
         ],
-        process="sequential",  # You could also try smart execution
+        process="sequential",
         verbose=True
     )
-    return crew
