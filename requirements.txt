@@ -1,0 +1,28 @@
+# Core framework
+streamlit==1.37.1
+python-dotenv==1.0.1
+pydantic==2.11.1
+
+# LangChain ecosystem
+langchain==0.2.11
+langchain-community==0.2.10
+langchain-groq==0.1.4
+langchain-huggingface==0.0.3
+
+# Vector DB
+chromadb==0.4.24
+
+# Embeddings & NLP
+huggingface-hub==0.24.6
+sentence-transformers==2.7.0
+
+# PDF processing
+PyMuPDF==1.24.9
+
+# Visualization
+matplotlib==3.9.2
+
+# Utilities
+tqdm==4.66.5
+requests==2.32.3
+uuid==1.30
